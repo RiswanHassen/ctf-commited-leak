@@ -1,5 +1,5 @@
 # CTF Write-Up: Oh no, not again!
-
+https://tryhackme.com/room/committed
 ## Challenge
 Einer unserer Entwickler hat versehentlich sensible Daten in ein GitHub-Repository committed.  
 Unsere Aufgabe: herausfinden, **was** und **wo** das war.  
@@ -66,7 +66,7 @@ Treffer im Commit `3a8cc16 (DB check)`:
 
 ```diff
  user="root", # Username Goes Here
--password="flag{a489a9dbf8eb9d37c6e0cc1a92cda17b}" # Password Goes Here
+-password="flag{********************************}" # Password Goes Here
 +password="" # Password Goes Here
 ```
 
@@ -79,7 +79,7 @@ Im nächsten Commit (`c56c470 Oops`) wurde das Passwort entfernt – bleibt aber
 - **Datei:** `main.py`
 - **Secret:**  
   ```
-  flag{a489a9dbf8eb9d37c6e0cc1a92cda17b}
+  flag{********************************}
   ```
 
 ---
@@ -94,5 +94,5 @@ Im nächsten Commit (`c56c470 Oops`) wurde das Passwort entfernt – bleibt aber
 
 ## Flag
 ```
-flag{a489a9dbf8eb9d37c6e0cc1a92cda17b}
+flag{********************************}
 ```
